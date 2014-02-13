@@ -23,7 +23,7 @@ a {
 }
 
 #splash {
-	width: 900px;
+	width: 920px;
 	height: 600px;
 	margin: 0 auto;
 	display: block;
@@ -31,7 +31,7 @@ a {
 
 #right {
 	float: right;
-	width: 516px;
+	width: 520px;
 	height: 600px;
 	display: block;
 	margin: 0 auto;
@@ -55,10 +55,20 @@ a {
 #subtitle {
 	color: #eda711;
 	text-transform: uppercase;
-	padding: 10px 0;
+	padding: 5px 0;
 	display: block;
-	font-size: 17px;
+	font-size: 20px;
 }
+
+/*
+#logo {
+	background: transparent url(/images/logo.png) no-repeat 0 0;
+	width: 100%;
+	height: 19%;
+	font-size: 0px;
+	margin: 0;
+}
+*/
 
 #video {
 	margin: 100px auto 25px;
@@ -69,17 +79,98 @@ a {
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: bold;
+	text-shadow: 4px 4px 2px rgba(0, 0, 0, .6);
+}
+
+#tickets:before {
+	
 }
 
 #tickets {
 	background: transparent url(/images/tickets.png) no-repeat left top;
-	width: 77.33%;
+	width: 76.73%;
 	padding-bottom: 17.5%;
 	font-size: 0px;
 	margin: 0 auto;
 	position: relative;
 }
 
-#tickets:hover {
-	background-position: left -105px;
+#tickets:before {
+	/* background-position: left -105px; */
+	background: transparent url(/images/tickets.png) no-repeat left bottom;
+	position: absolute;
+	content: '';
+	width: 399px;
+	height: 105px;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	
+	-webkit-transition: all 0.2s;
+	   -moz-transition: all 0.2s;
+	     -o-transition: all 0.2s;
+	        transition:	all 0.2s;
+}
+
+
+
+#tickets:hover:before {
+	opacity: 1;
+}
+
+@media all and (max-width: 920px) {
+	#splash {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 450px) {
+	body {
+		background-image: none;
+		
+	}
+	
+	#splash {
+		background: #000 url(/images/bg-mobile.jpg) no-repeat center top/cover;
+	}
+	
+	#right {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+	
+	#insomniac {
+		width: auto;
+	}
+	
+	#video,
+	#date,
+	#tickets {
+		position: absolute;
+		left: 50%;
+		-webkit-transform: translate(-50%, 0);
+		   -moz-transform: translate(-50%, 0);
+		     -o-transform: translate(-50%, 0);
+		        transform: translate(-50%, 0);
+	}
+	
+	#date {
+		top: 300px;
+		width: 100%;
+	}
+	
+	#video {
+		top: 450px;
+		margin: 0;
+	}
+	
+	#tickets {
+		width: 399px;
+		height: 105px;
+		overflow: hidden;
+		padding: 0;
+		top: 350px;
+	}
+	
 }
