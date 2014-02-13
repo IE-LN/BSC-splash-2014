@@ -1,0 +1,21 @@
+
+body {
+	background: url(bck.jpg) #251e27 no-repeat top;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #000000;
+}
+div { width:450px; height:1100px; margin:0 auto; text-align:center; overflow:hidden;}
+a.btn {
+	background:url(btn.png) no-repeat bottom;
+	margin:0 auto;
+	margin-top:498px;
+	display:block;
+	width:278px;
+	height:50px;
+}
+a.btn:hover {
+	background-position:top;
+}
