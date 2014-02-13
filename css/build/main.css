@@ -148,11 +148,12 @@ a {
 @media all and (max-width: 450px) {
 	body {
 		background-image: none;
-		
+		padding-bottom: 20px;
 	}
 	
 	#splash {
 		background: #000 url(/images/bg-mobile.jpg) no-repeat center top/cover;
+		height: 850px;
 	}
 	
 	#right {
@@ -182,8 +183,10 @@ a {
 	}
 	
 	#video {
+		width: 90% !important;
 		top: 450px;
 		margin: 0;
+		padding-bottom: 100px;
 	}
 	
 	#tickets {
@@ -192,6 +195,11 @@ a {
 		overflow: hidden;
 		padding: 0;
 		top: 350px;
+	}
+	
+	#left {
+		position: absolute;
+		bottom: 0;
 	}
 	
 }
