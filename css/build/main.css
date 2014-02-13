@@ -24,9 +24,30 @@ a {
 
 #splash {
 	width: 920px;
-	height: 600px;
+	height: 650px;
 	margin: 0 auto;
 	display: block;
+	position: relative;
+}
+
+#left {
+	position: absolute;
+	width: 400px;
+	bottom: 0px;
+}
+
+#artists {
+	text-align: center;
+	color: #fff;
+	font-size: 21px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
+	margin: 0;
+}
+
+.artist {
+	margin: 0 7px;
 }
 
 #right {
