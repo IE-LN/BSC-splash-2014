@@ -153,7 +153,10 @@ a {
 	
 	#splash {
 		background: #000 url(/images/bg-mobile.jpg) no-repeat center top/cover;
-		height: 850px;
+	}
+	
+	#artists {
+		display: none;
 	}
 	
 	#right {
